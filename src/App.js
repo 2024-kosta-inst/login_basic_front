@@ -5,6 +5,7 @@ import SignUp from './components/SignUp';
 import Login from './components/Login';
 import OAuthVerification from './components/OAuthVerification';
 import Search from './components/Search';
+import QRCode from './components/QRCode';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<Login />}/>
       <Route path="/signup" element={<SignUp />}/>
       <Route path="/search" element={<Search />}/>
+      <Route path="/qr" element={<QRCode />}/>
       <Route path="/oauth/:provider" element={<OAuthVerification />}/>
     </Routes>
   );

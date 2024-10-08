@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ReactSearchAutocomplete } from "react-search-autocomplete";
 
 const Search = () => {
@@ -24,7 +24,6 @@ const Search = () => {
       location: "부산광역시 해운대구",
     },
   ]);
-  useEffect(() => {}, []);
 
   const handleOnSearch = (string, results) => {
     console.log(string, results);
